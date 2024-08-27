@@ -11,8 +11,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 export const metadata: Metadata = {
- title: 'Alin Group',
- description: 'Alin Group webisite',
+ title: 'HRA portfolio',
+ description: 'my portfolio',
 };
 
 export default function RootLayout({
@@ -27,15 +27,10 @@ export default function RootLayout({
 
  return (
   <html lang={activeLocale.langAlias} dir={activeLocale.dir}>
-   <body
-    className='text-[0.85rem] lg:text-[0.9rem] bg-background text-foreground'
-    style={{ textAlign: 'start' }}
-   >
+   <body>
     <AppThemeConfigProvider>
      <MuiCache>
-      <MuiTheme>
-       <NavigationProvider>{children}</NavigationProvider>
-      </MuiTheme>
+      <MuiTheme>{children}</MuiTheme>
      </MuiCache>
     </AppThemeConfigProvider>
    </body>
