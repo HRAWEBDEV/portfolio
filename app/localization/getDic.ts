@@ -1,5 +1,5 @@
 import { locales } from './locales';
-type TDic = {
+type Dic = {
  [key: string]: any;
 };
 
@@ -15,4 +15,4 @@ const getDic = ({
  );
 };
 
-export { type TDic, getDic };
+export { type Dic, getDic };

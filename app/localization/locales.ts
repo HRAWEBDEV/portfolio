@@ -8,4 +8,6 @@ const locales = {
  },
 } as const;
 
-export { locales };
+type SupportedLocals = keyof typeof locales;
+
+export { type SupportedLocals, locales };

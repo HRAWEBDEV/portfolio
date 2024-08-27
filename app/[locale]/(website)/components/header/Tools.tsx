@@ -8,6 +8,11 @@ import Badge from '@mui/material/Badge';
 import { useAppThemeConfigContext } from '@/app/services/app-theme-config/appThemeConfig';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import { locales } from '@/app/localization/locales';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import { type Dic } from '@/app/localization/getDic';
 
 const buttonDefaultIcons = {
  borderRadius: (theme: Theme) => theme.spacing(2),
@@ -25,8 +30,9 @@ const buttonDefaultIcons = {
  },
 };
 
-export default function Tools() {
+export default function Tools({ dic }: { dic: Dic }) {
  const { changeMode, changeLocale, mode, locale } = useAppThemeConfigContext();
+ const activeLocale = locales[locale];
 
  return (
   <div className='flex items-center gap-2 lg:gap-4'>
@@ -38,7 +44,7 @@ export default function Tools() {
     <SearchIcon />
    </IconButton>
    <IconButton size='small' sx={buttonDefaultIcons}>
-    <Badge color='secondary' badgeContent='فا'>
+    <Badge color='secondary' badgeContent={activeLocale.langAlias}>
      <LanguageIcon />
     </Badge>
    </IconButton>
