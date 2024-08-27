@@ -22,6 +22,7 @@
   --accent-foreground: 0 0% 100%;
   --background: 0 0% 100%;
   --foreground: 0 0% 0%;
+  --app-header-min-height: 3.4rem;
  }
  [data-mode='dark'] {
   --accent: 0 0% 83.14%;

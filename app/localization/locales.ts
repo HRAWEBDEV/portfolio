@@ -1,4 +1,4 @@
-export const locales = {
+const locales = {
  en: { dir: 'ltr', lang: 'english', calendar: 'garegorian', langAlias: 'en' },
  fa: {
   dir: 'rtl',
@@ -7,3 +7,5 @@ export const locales = {
   langAlias: 'fa',
  },
 } as const;
+
+export { locales };
