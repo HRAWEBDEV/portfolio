@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -31,6 +32,11 @@ const buttonDefaultIcons = {
 };
 
 export default function Tools({ dic }: { dic: Dic }) {
+ const [languagesAnchorEl, setLanguagesAnchorEl] = useState<null | HTMLElement>(
+  null
+ );
+ const isOpen = Boolean(languagesAnchorEl);
+
  const { changeMode, changeLocale, mode, locale } = useAppThemeConfigContext();
  const activeLocale = locales[locale];
 
@@ -58,6 +64,9 @@ export default function Tools({ dic }: { dic: Dic }) {
    <IconButton size='small' sx={buttonDefaultIcons}>
     <MenuIcon />
    </IconButton>
+   <Menu open={isOpen} anchorEl={languagesAnchorEl}>
+    <MenuItem></MenuItem>
+   </Menu>
   </div>
  );
 }
