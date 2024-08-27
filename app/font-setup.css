@@ -1,0 +1,196 @@
+@font-face {
+ font-family: 'ir-sans';
+ src: local('IRANSansWebFaNum UltraLight'), local('IRANSansWebFaNum-UltraLight'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum-UltraLight.woff2') format('woff2'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum-UltraLight.woff') format('woff');
+ font-weight: 200;
+ font-style: normal;
+ font-display: swap;
+}
+@font-face {
+ font-family: 'ir-sans';
+ src: local('IRANSansWebFaNum Light'), local('IRANSansWebFaNum-Light'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum-Light.woff2') format('woff2'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum-Light.woff') format('woff');
+ font-weight: 300;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'ir-sans';
+ src: local('IRANSansWebFaNum'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum.woff2') format('woff2'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum.woff') format('woff');
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;
+}
+@font-face {
+ font-family: 'ir-sans';
+ src: local('IRANSansWebFaNum Medium'), local('IRANSansWebFaNum-Medium'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum-Medium.woff2') format('woff2'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum-Medium.woff') format('woff');
+ font-weight: 500;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'ir-sans';
+ src: local('IRANSansWebFaNum Black'), local('IRANSansWebFaNum-Black'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum-Black.woff2') format('woff2'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum-Black.woff') format('woff');
+ font-weight: 900;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'ir-sans';
+ src: local('IRANSansWebFaNum Bold'), local('IRANSansWebFaNum-Bold'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum-Bold.woff2') format('woff2'),
+  url('/fonts/fa/iran-sans/IRANSansWebFaNum-Bold.woff') format('woff');
+ font-weight: bold;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'ir-yekan';
+ font-style: normal;
+ font-weight: 300;
+ src: url('/fonts/fa/iran-yekan/iran-yekan-light.eot');
+ src: url('/fonts/fa/iran-yekan/iran-yekan-light.eot?#iefix')
+   format('embedded-opentype'),
+  url('/fonts/fa/iran-yekan/iran-yekan-light.woff') format('woff'),
+  url('/fonts/fa/iran-yekan/iran-yekan-light.ttf') format('truetype');
+}
+@font-face {
+ font-family: 'ir-yekan';
+ font-style: normal;
+ font-weight: normal;
+ src: url('/fonts/fa/iran-yekan/iran-yekan-regular.eot');
+ src: url('/fonts/fa/iran-yekan/iran-yekan-regular.eot?#iefix')
+   format('embedded-opentype'),
+  url('/fonts/fa/iran-yekan/iran-yekan-regular.woff') format('woff'),
+  url('/fonts/fa/iran-yekan/iran-yekan-regular.ttf') format('truetype');
+}
+@font-face {
+ font-family: 'ir-yekan';
+ font-style: normal;
+ font-weight: bold;
+ src: url('/fonts/fa/iran-yekan/iran-yekan-bold.eot');
+ src: url('/fonts/fa/iran-yekan/iran-yekan-bold.eot?#iefix')
+   format('embedded-opentype'),
+  url('/fonts/fa/iran-yekan/iran-yekan-bold.woff') format('woff'),
+  url('/fonts/fa/iran-yekan/iran-yekan-bold.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-Black.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-Black.woff') format('woff');
+ font-weight: 900;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-BlackItalic.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-BlackItalic.woff') format('woff');
+ font-weight: 900;
+ font-style: italic;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-Bold.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-Bold.woff') format('woff');
+ font-weight: bold;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-BoldItalic.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-BoldItalic.woff') format('woff');
+ font-weight: bold;
+ font-style: italic;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-Italic.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-Italic.woff') format('woff');
+ font-weight: normal;
+ font-style: italic;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-Light.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-Light.woff') format('woff');
+ font-weight: 300;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-LightItalic.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-LightItalic.woff') format('woff');
+ font-weight: 300;
+ font-style: italic;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-Medium.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-Medium.woff') format('woff');
+ font-weight: 500;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-MediumItalic.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-MediumItalic.woff') format('woff');
+ font-weight: 500;
+ font-style: italic;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-Regular.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-Regular.woff') format('woff');
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-ThinItalic.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-ThinItalic.woff') format('woff');
+ font-weight: 100;
+ font-style: italic;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'en-roboto';
+ src: url('/fonts/en/roboto/Roboto-Thin.woff2') format('woff2'),
+  url('/fonts/en/roboto/Roboto-Thin.woff') format('woff');
+ font-weight: 100;
+ font-style: normal;
+ font-display: swap;
+}

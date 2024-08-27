@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font setup */
+[lang='fa'] body {
+ font-family: theme(fontFamily[fa]);
+}
+[lang='en'] body {
+ font-family: theme(fontFamily[en]);
+}
+
+@layer base {
+ :root {
+  --primary: 174 44% 14%;
+  --primary-light: 174 44% 21%;
+  --primary-dark: 174 44% 10%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 32 40% 54%;
+  --accent-light: 32 40% 68%;
+  --accent-dark: 32 40% 40%;
+  --accent-foreground: 0 0% 100%;
+  --background: 0 0% 100%;
+  --foreground: var(--primary);
+ }
+ [data-mode='dark'] {
+  --primary: 174 44% 14%;
+  --primary-light: 174 44% 21%;
+  --primary-dark: 174 44% 10%;
+  --primary-foreground: 0 0% 100%;
+  --background: 0 0% 100%;
+  --foreground: var(--primary);
+ }
+}
