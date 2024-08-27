@@ -12,10 +12,13 @@ const config: Config = {
    container: {
     center: true,
     padding: {
-     DEFAULT: '1.2rem',
+     DEFAULT: '2rem',
+     lg: '1.6rem',
+     '2xl': '2rem',
     },
     screens: {
-     '2xl': '1400px',
+     lg: '100vw',
+     '2xl': '1440px',
     },
    },
    colors: {

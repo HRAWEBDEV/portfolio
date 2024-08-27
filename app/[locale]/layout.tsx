@@ -28,7 +28,7 @@ export default function RootLayout({
  return (
   <html lang={activeLocale.langAlias} dir={activeLocale.dir}>
    <body
-    className='text-[0.85rem] lg:text-[0.9rem]'
+    className='text-[0.85rem] lg:text-[0.9rem] bg-background text-foreground'
     style={{ textAlign: 'start' }}
    >
     <AppThemeConfigProvider>

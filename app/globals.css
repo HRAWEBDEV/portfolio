@@ -12,23 +12,23 @@
 
 @layer base {
  :root {
-  --primary: 174 44% 14%;
-  --primary-light: 174 44% 21%;
-  --primary-dark: 174 44% 10%;
+  --primary: 341.54 75.48% 30.39%;
+  --primary-light: 343.4 79.66% 34.71%;
+  --primary-dark: 343.1 87.65% 15.88%;
   --primary-foreground: 0 0% 100%;
-  --accent: 32 40% 54%;
-  --accent-light: 32 40% 68%;
-  --accent-dark: 32 40% 40%;
+  --accent: 0 0% 45.1%;
+  --accent-light: 0 0% 63.92%;
+  --accent-dark: 0 0% 32.16%;
   --accent-foreground: 0 0% 100%;
   --background: 0 0% 100%;
-  --foreground: var(--primary);
+  --foreground: 0 0% 0%;
  }
  [data-mode='dark'] {
-  --primary: 174 44% 14%;
-  --primary-light: 174 44% 21%;
-  --primary-dark: 174 44% 10%;
-  --primary-foreground: 0 0% 100%;
-  --background: 0 0% 100%;
-  --foreground: var(--primary);
+  --accent: 0 0% 83.14%;
+  --accent-light: 0 0% 89.8%;
+  --accent-dark: 0 0% 63.92%;
+  --accent-foreground: 0 0% 100%;
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
  }
 }
