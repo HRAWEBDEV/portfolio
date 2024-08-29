@@ -14,6 +14,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { type Dic } from '@/app/localization/getDic';
+import { useNavigationContext } from '../../services/navigationContext';
 
 const buttonDefaultIcons = {
  borderRadius: (theme: Theme) => theme.spacing(2),
@@ -32,6 +33,7 @@ const buttonDefaultIcons = {
 };
 
 export default function Tools({ dic }: { dic: Dic }) {
+ const { setShowNav, showNav } = useNavigationContext();
  const [languagesAnchorEl, setLanguagesAnchorEl] = useState<null | HTMLElement>(
   null
  );
@@ -61,7 +63,12 @@ export default function Tools({ dic }: { dic: Dic }) {
    >
     {mode == 'light' ? <DarkModeIcon /> : <LightModeIcon />}
    </IconButton>
-   <IconButton size='small' sx={buttonDefaultIcons}>
+   <IconButton
+    className='lg:!hidden !block'
+    size='small'
+    sx={buttonDefaultIcons}
+    onClick={() => setShowNav(!showNav)}
+   >
     <MenuIcon />
    </IconButton>
    <Menu open={isOpen} anchorEl={languagesAnchorEl}>

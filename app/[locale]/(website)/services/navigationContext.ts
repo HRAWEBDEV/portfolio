@@ -3,11 +3,12 @@ import { OutOfContext } from '@/app/utils/OutOfContext';
 
 type Props = {
  headerIsVisible: boolean;
+ largeDevice: boolean;
  xlargeDevice: boolean;
- showDesktopNav: boolean;
+ showNav: boolean;
 };
 type Actions = {
- setShowDesktopNav: Dispatch<SetStateAction<boolean>>;
+ setShowNav: Dispatch<SetStateAction<boolean>>;
 };
 
 const navigationContext = createContext<(Props & Actions) | null>(null);

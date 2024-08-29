@@ -5,8 +5,11 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { Theme } from '@mui/material/styles';
 
 export default function NavigationProvider({ children }: PropsWithChildren) {
- const [showDesktopNav, setShowDesktopNav] = useState(false);
+ const [showNav, setShowNav] = useState(false);
  const [headerIsVisible, setHeaderIsVisible] = useState(true);
+ const largeDevice = useMediaQuery((theme: Theme) =>
+  theme.breakpoints.down('lg')
+ );
  const smallerThanLarge = useMediaQuery((theme: Theme) =>
   theme.breakpoints.down('xl')
  );
@@ -14,11 +17,12 @@ export default function NavigationProvider({ children }: PropsWithChildren) {
  const contextValue = useMemo(
   () => ({
    headerIsVisible,
-   showDesktopNav,
+   showNav,
+   setShowNav,
+   largeDevice,
    xlargeDevice: smallerThanLarge,
-   setShowDesktopNav,
   }),
-  [headerIsVisible, smallerThanLarge, showDesktopNav]
+  [headerIsVisible, smallerThanLarge, showNav, largeDevice]
  );
 
  useEffect(() => {
@@ -38,6 +42,11 @@ export default function NavigationProvider({ children }: PropsWithChildren) {
   window.addEventListener('scroll', windowScrollWatcher);
   return () => window.removeEventListener('scroll', windowScrollWatcher);
  }, []);
+
+ //
+ useEffect(() => {
+  setShowNav(!largeDevice);
+ }, [largeDevice]);
 
  return (
   <navigationContext.Provider value={contextValue}>
